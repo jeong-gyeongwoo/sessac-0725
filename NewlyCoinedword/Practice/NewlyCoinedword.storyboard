@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e83-mQ-vNk">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Word View Controller-->
+        <scene sceneID="TwH-6v-usf">
+            <objects>
+                <viewController id="e83-mQ-vNk" customClass="WordViewController" customModule="NewlyCoinedword" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oIb-ad-WRX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="m83-gU-zLU">
+                                <rect key="frame" x="10" y="220.33333333333334" width="394" height="295.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="m83-gU-zLU" secondAttribute="height" multiplier="4:3" id="Lo6-O9-UPS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbj-Im-mBE">
+                                <rect key="frame" x="212" y="534" width="192" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YM4-Ry-s70">
+                                <rect key="frame" x="10" y="534" width="192" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nFg-tA-8OJ">
+                                <rect key="frame" x="20" y="40" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldKeyboardTapped:" destination="e83-mQ-vNk" eventType="editingDidEndOnExit" id="RHf-1d-3ZY"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3f-fy-CLu">
+                                <rect key="frame" x="20" y="92" width="68.333333333333329" height="34.333333333333343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="신조어"/>
+                                <buttonConfiguration key="configuration" style="plain" title="신조어"/>
+                                <connections>
+                                    <action selector="wordButtonTapped:" destination="e83-mQ-vNk" eventType="touchUpInside" id="ThD-Ez-AeK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWm-TB-w5P">
+                                <rect key="frame" x="96.333333333333314" y="92" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="신조어2"/>
+                                <connections>
+                                    <action selector="wordButtonTapped:" destination="e83-mQ-vNk" eventType="touchUpInside" id="kqB-zB-rIx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42J-ft-pVz">
+                                <rect key="frame" x="182.33333333333334" y="92" width="79.000000000000028" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="신조어3"/>
+                                <connections>
+                                    <action selector="wordButtonTapped:" destination="e83-mQ-vNk" eventType="touchUpInside" id="fn0-bZ-Ptg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신조어 뜻 표시" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nP1-6g-ZfS">
+                                <rect key="frame" x="159" y="358" width="97" height="20"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IcM-5a-raU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="IcM-5a-raU" firstAttribute="trailing" secondItem="m83-gU-zLU" secondAttribute="trailing" constant="10" id="HsL-jX-iAK"/>
+                            <constraint firstItem="m83-gU-zLU" firstAttribute="centerX" secondItem="oIb-ad-WRX" secondAttribute="centerX" id="Poe-wT-mmU"/>
+                            <constraint firstItem="nP1-6g-ZfS" firstAttribute="centerY" secondItem="oIb-ad-WRX" secondAttribute="centerY" id="Vzy-5l-T9i"/>
+                            <constraint firstItem="m83-gU-zLU" firstAttribute="centerY" secondItem="oIb-ad-WRX" secondAttribute="centerY" id="cVu-GP-BzC"/>
+                            <constraint firstItem="nP1-6g-ZfS" firstAttribute="centerX" secondItem="oIb-ad-WRX" secondAttribute="centerX" id="ggY-wD-mAO"/>
+                            <constraint firstItem="nFg-tA-8OJ" firstAttribute="top" secondItem="IcM-5a-raU" secondAttribute="top" constant="20" id="hNk-Oj-eck"/>
+                            <constraint firstItem="IcM-5a-raU" firstAttribute="trailing" secondItem="nFg-tA-8OJ" secondAttribute="trailing" constant="20" id="qej-F3-Xpc"/>
+                            <constraint firstItem="nFg-tA-8OJ" firstAttribute="leading" secondItem="IcM-5a-raU" secondAttribute="leading" constant="20" id="rHC-g1-o1K"/>
+                            <constraint firstItem="m83-gU-zLU" firstAttribute="leading" secondItem="IcM-5a-raU" secondAttribute="leading" constant="10" id="vff-OZ-nsK"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="EOB-ed-BBe" appends="YES" id="BS0-91-2Lh"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="nP1-6g-ZfS" id="lGF-aH-ePY"/>
+                        <outlet property="wordFirstButton" destination="S3f-fy-CLu" id="g3m-Nc-wUm"/>
+                        <outlet property="wordTextField" destination="nFg-tA-8OJ" id="Qig-4k-Nva"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjZ-BE-bZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EOB-ed-BBe">
+                    <connections>
+                        <action selector="keyEdit:" destination="e83-mQ-vNk" id="Fnh-0g-drq"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1250.7246376811595" y="-49.728260869565219"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
