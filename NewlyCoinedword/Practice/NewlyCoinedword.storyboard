@@ -39,9 +39,8 @@
                                     <action selector="textFieldKeyboardTapped:" destination="e83-mQ-vNk" eventType="editingDidEndOnExit" id="RHf-1d-3ZY"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3f-fy-CLu">
-                                <rect key="frame" x="20" y="92" width="68.333333333333329" height="34.333333333333343"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3f-fy-CLu">
+                                <rect key="frame" x="20" y="94" width="68.333333333333329" height="34.333333333333343"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="신조어"/>
                                 <buttonConfiguration key="configuration" style="plain" title="신조어"/>
@@ -49,18 +48,16 @@
                                     <action selector="wordButtonTapped:" destination="e83-mQ-vNk" eventType="touchUpInside" id="ThD-Ez-AeK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWm-TB-w5P">
-                                <rect key="frame" x="96.333333333333314" y="92" width="78" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWm-TB-w5P">
+                                <rect key="frame" x="98.333333333333314" y="94" width="78" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="신조어2"/>
                                 <connections>
                                     <action selector="wordButtonTapped:" destination="e83-mQ-vNk" eventType="touchUpInside" id="kqB-zB-rIx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42J-ft-pVz">
-                                <rect key="frame" x="182.33333333333334" y="92" width="79.000000000000028" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42J-ft-pVz">
+                                <rect key="frame" x="186.33333333333334" y="94" width="79.000000000000028" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="신조어3"/>
                                 <connections>
@@ -68,7 +65,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신조어 뜻 표시" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nP1-6g-ZfS">
-                                <rect key="frame" x="159" y="358" width="97" height="20"/>
+                                <rect key="frame" x="158.66666666666666" y="358" width="97" height="20.333333333333314"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -79,15 +76,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="42J-ft-pVz" firstAttribute="leading" secondItem="NWm-TB-w5P" secondAttribute="trailing" constant="10" id="AyQ-0W-MPs"/>
                             <constraint firstItem="IcM-5a-raU" firstAttribute="trailing" secondItem="m83-gU-zLU" secondAttribute="trailing" constant="10" id="HsL-jX-iAK"/>
+                            <constraint firstItem="NWm-TB-w5P" firstAttribute="leading" secondItem="S3f-fy-CLu" secondAttribute="trailing" constant="10" id="Hu7-LB-Pcm"/>
+                            <constraint firstItem="42J-ft-pVz" firstAttribute="top" secondItem="nFg-tA-8OJ" secondAttribute="bottom" constant="20" id="KMi-hi-vfx"/>
                             <constraint firstItem="m83-gU-zLU" firstAttribute="centerX" secondItem="oIb-ad-WRX" secondAttribute="centerX" id="Poe-wT-mmU"/>
                             <constraint firstItem="nP1-6g-ZfS" firstAttribute="centerY" secondItem="oIb-ad-WRX" secondAttribute="centerY" id="Vzy-5l-T9i"/>
+                            <constraint firstItem="NWm-TB-w5P" firstAttribute="top" secondItem="nFg-tA-8OJ" secondAttribute="bottom" constant="20" id="c1i-U1-q92"/>
                             <constraint firstItem="m83-gU-zLU" firstAttribute="centerY" secondItem="oIb-ad-WRX" secondAttribute="centerY" id="cVu-GP-BzC"/>
                             <constraint firstItem="nP1-6g-ZfS" firstAttribute="centerX" secondItem="oIb-ad-WRX" secondAttribute="centerX" id="ggY-wD-mAO"/>
                             <constraint firstItem="nFg-tA-8OJ" firstAttribute="top" secondItem="IcM-5a-raU" secondAttribute="top" constant="20" id="hNk-Oj-eck"/>
+                            <constraint firstItem="S3f-fy-CLu" firstAttribute="top" secondItem="nFg-tA-8OJ" secondAttribute="bottom" constant="20" id="pXG-kA-u0w"/>
                             <constraint firstItem="IcM-5a-raU" firstAttribute="trailing" secondItem="nFg-tA-8OJ" secondAttribute="trailing" constant="20" id="qej-F3-Xpc"/>
                             <constraint firstItem="nFg-tA-8OJ" firstAttribute="leading" secondItem="IcM-5a-raU" secondAttribute="leading" constant="20" id="rHC-g1-o1K"/>
                             <constraint firstItem="m83-gU-zLU" firstAttribute="leading" secondItem="IcM-5a-raU" secondAttribute="leading" constant="10" id="vff-OZ-nsK"/>
+                            <constraint firstItem="S3f-fy-CLu" firstAttribute="leading" secondItem="IcM-5a-raU" secondAttribute="leading" constant="20" id="wyh-bd-gOc"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="EOB-ed-BBe" appends="YES" id="BS0-91-2Lh"/>
